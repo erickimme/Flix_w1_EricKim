@@ -7,7 +7,7 @@ target 'Flix_w1_EricKim' do
 
   # Pods for Flix_w1_EricKim
   # This pulls in the latest version of Alamofire >= 4.4 but less than 5.0.
-  pod ‘AlamofireImage’, '~> 3.3’
+  pod ‘AlamofireImage’
 
   # Add additional dependencies
 #  pod 'OAuthSwift', '~> 1.1.0'
