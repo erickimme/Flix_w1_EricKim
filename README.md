@@ -2,16 +2,16 @@
 
 **Flix_w1_EricKim** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User sees app icon in home screen and styled launch screen (+1pt)
-- [ ] User can scroll through a list of movies currently playing in theaters from The Movie DB API (+5pt)
-- [ ] User can "Pull to refresh" the movie list (+2pt)
-- [ ] User sees a loading state while waiting for the movies to load (+2pt)
+- [X] User sees app icon in home screen and styled launch screen (+1pt)
+- [X] User can scroll through a list of movies currently playing in theaters from The Movie DB API (+5pt)
+- [X] User can "Pull to refresh" the movie list (+2pt)
+- [X] User sees a loading state while waiting for the movies to load (+2pt)
 
 The following **optional** user stories are implemented:
 
@@ -26,22 +26,17 @@ The following **additional** user stories are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
 
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1.
-2.
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/bCGhj8x.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+My xcode was not able to update to the latest version so I was not able to use iPhone 7 in Xcode setting.
 
 ## License
 
