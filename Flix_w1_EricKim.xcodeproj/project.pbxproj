@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		5942ABDDFE193F942D459106 /* Pods_Flix_w1_EricKimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C2A5CC4D0A7A0A9DD87BC /* Pods_Flix_w1_EricKimUITests.framework */; };
 		B865E109200D3CB800E04291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865E108200D3CB800E04291 /* AppDelegate.swift */; };
-		B865E10B200D3CB800E04291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865E10A200D3CB800E04291 /* ViewController.swift */; };
 		B865E10E200D3CB800E04291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B865E10C200D3CB800E04291 /* Main.storyboard */; };
 		B865E110200D3CB800E04291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B865E10F200D3CB800E04291 /* Assets.xcassets */; };
 		B865E113200D3CB800E04291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B865E111200D3CB800E04291 /* LaunchScreen.storyboard */; };
 		B865E11E200D3CB800E04291 /* Flix_w1_EricKimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865E11D200D3CB800E04291 /* Flix_w1_EricKimTests.swift */; };
 		B865E129200D3CB800E04291 /* Flix_w1_EricKimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865E128200D3CB800E04291 /* Flix_w1_EricKimUITests.swift */; };
+		B8AC570B200FA7C400E89BA2 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AC570A200FA7C400E89BA2 /* NowPlayingViewController.swift */; };
+		B8AC570D201080D000E89BA2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AC570C201080D000E89BA2 /* MovieCell.swift */; };
 		C8BF7A63DEAC72BB78CEE657 /* Pods_Flix_w1_EricKim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6C3D4F1E5033FFA4A6F126 /* Pods_Flix_w1_EricKim.framework */; };
 		C92A286132D1D2FFB9E270F4 /* Pods_Flix_w1_EricKimTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E592ABD116EBAE034560FCB7 /* Pods_Flix_w1_EricKimTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,7 +43,6 @@
 		7723F5938AE2148DB8746F04 /* Pods-Flix_w1_EricKimTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKimTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKimTests/Pods-Flix_w1_EricKimTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B865E105200D3CB800E04291 /* Flix_w1_EricKim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix_w1_EricKim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B865E108200D3CB800E04291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B865E10A200D3CB800E04291 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B865E10D200D3CB800E04291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B865E10F200D3CB800E04291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B865E112200D3CB800E04291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		B865E124200D3CB800E04291 /* Flix_w1_EricKimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flix_w1_EricKimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B865E128200D3CB800E04291 /* Flix_w1_EricKimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flix_w1_EricKimUITests.swift; sourceTree = "<group>"; };
 		B865E12A200D3CB800E04291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8AC570A200FA7C400E89BA2 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		B8AC570C201080D000E89BA2 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D2C7D5385E35AD229CB1BEDE /* Pods-Flix_w1_EricKim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKim/Pods-Flix_w1_EricKim.debug.xcconfig"; sourceTree = "<group>"; };
 		DE62ACD7D75D3A663B59E2A8 /* Pods-Flix_w1_EricKimTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKimTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKimTests/Pods-Flix_w1_EricKimTests.release.xcconfig"; sourceTree = "<group>"; };
 		DEF51BCCC8D9DD313DDD39B5 /* Pods-Flix_w1_EricKimUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKimUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKimUITests/Pods-Flix_w1_EricKimUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,12 +139,13 @@
 		B865E107200D3CB800E04291 /* Flix_w1_EricKim */ = {
 			isa = PBXGroup;
 			children = (
+				B8AC570A200FA7C400E89BA2 /* NowPlayingViewController.swift */,
 				B865E108200D3CB800E04291 /* AppDelegate.swift */,
-				B865E10A200D3CB800E04291 /* ViewController.swift */,
 				B865E10C200D3CB800E04291 /* Main.storyboard */,
 				B865E10F200D3CB800E04291 /* Assets.xcassets */,
 				B865E111200D3CB800E04291 /* LaunchScreen.storyboard */,
 				B865E114200D3CB800E04291 /* Info.plist */,
+				B8AC570C201080D000E89BA2 /* MovieCell.swift */,
 			);
 			path = Flix_w1_EricKim;
 			sourceTree = "<group>";
@@ -393,14 +396,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flix_w1_EricKim/Pods-Flix_w1_EricKim-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwiftAlamofire/OAuthSwiftAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwiftAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,8 +463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B865E10B200D3CB800E04291 /* ViewController.swift in Sources */,
+				B8AC570B200FA7C400E89BA2 /* NowPlayingViewController.swift in Sources */,
 				B865E109200D3CB800E04291 /* AppDelegate.swift in Sources */,
+				B8AC570D201080D000E89BA2 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +538,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -585,6 +588,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -712,6 +716,7 @@
 				B865E12F200D3CB800E04291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B865E130200D3CB800E04291 /* Build configuration list for PBXNativeTarget "Flix_w1_EricKimTests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +725,7 @@
 				B865E132200D3CB800E04291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B865E133200D3CB800E04291 /* Build configuration list for PBXNativeTarget "Flix_w1_EricKimUITests" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +734,7 @@
 				B865E135200D3CB800E04291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
