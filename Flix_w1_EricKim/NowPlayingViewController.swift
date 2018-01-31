@@ -1,34 +1,35 @@
  //
-//  NowPlayingViewController.swift
-//  Flix_w1_EricKim
-//
-//  Created by kimeric on 1/17/18.
-//  Copyright © 2018 EricKim. All rights reserved.
-//
-
-import UIKit
-import AlamofireImage
+ //  NowPlayingViewController.swift
+ //  Flix_w1_EricKim
+ //
+ //  Created by kimeric on 1/17/18.
+ //  Copyright © 2018 EricKim. All rights reserved.
+ //
  
-class NowPlayingViewController: UIViewController, UITableViewDataSource {
-
+ import UIKit
+ import AlamofireImage
+ 
+ class NowPlayingViewController: UIViewController, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var movies: [[String: Any]] = []
+    
     var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.startAnimating()
-
+        
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         
         tableView.dataSource = self
         fetchMovies()
-
+        
     }
     
     func didPullToRefresh(_ refreshControl: UIRefreshControl){
@@ -46,7 +47,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
             if let error = error {
                 print(error.localizedDescription)
                 self.activityIndicator.stopAnimating()
-
+                
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
@@ -90,11 +91,22 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+        }
+        
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-
-}
+    
+    
+ }
