@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5942ABDDFE193F942D459106 /* Pods_Flix_w1_EricKimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C2A5CC4D0A7A0A9DD87BC /* Pods_Flix_w1_EricKimUITests.framework */; };
+		B813BE6C20227CC700682E1C /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B813BE6B20227CC700682E1C /* PosterCell.swift */; };
+		B813BE6E20227D4600682E1C /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B813BE6D20227D4600682E1C /* SuperheroViewController.swift */; };
 		B865E109200D3CB800E04291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865E108200D3CB800E04291 /* AppDelegate.swift */; };
 		B865E10E200D3CB800E04291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B865E10C200D3CB800E04291 /* Main.storyboard */; };
 		B865E110200D3CB800E04291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B865E10F200D3CB800E04291 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		4D5EB215B716D8F111827482 /* Pods-Flix_w1_EricKimUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKimUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKimUITests/Pods-Flix_w1_EricKimUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FAF80FFDDE79072D66AB870 /* Pods-Flix_w1_EricKim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKim.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKim/Pods-Flix_w1_EricKim.release.xcconfig"; sourceTree = "<group>"; };
 		7723F5938AE2148DB8746F04 /* Pods-Flix_w1_EricKimTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_w1_EricKimTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_w1_EricKimTests/Pods-Flix_w1_EricKimTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B813BE6B20227CC700682E1C /* PosterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		B813BE6D20227D4600682E1C /* SuperheroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
 		B865E105200D3CB800E04291 /* Flix_w1_EricKim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix_w1_EricKim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B865E108200D3CB800E04291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B865E10D200D3CB800E04291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			children = (
 				B8AC570A200FA7C400E89BA2 /* NowPlayingViewController.swift */,
 				B8E6F72A20216AD400FD9FC7 /* DetailViewController.swift */,
+				B813BE6D20227D4600682E1C /* SuperheroViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B8AC570C201080D000E89BA2 /* MovieCell.swift */,
+				B813BE6B20227CC700682E1C /* PosterCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -483,6 +489,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8AC570B200FA7C400E89BA2 /* NowPlayingViewController.swift in Sources */,
+				B813BE6C20227CC700682E1C /* PosterCell.swift in Sources */,
+				B813BE6E20227D4600682E1C /* SuperheroViewController.swift in Sources */,
 				B865E109200D3CB800E04291 /* AppDelegate.swift in Sources */,
 				B8AC570D201080D000E89BA2 /* MovieCell.swift in Sources */,
 				B8E6F72B20216AD400FD9FC7 /* DetailViewController.swift in Sources */,
