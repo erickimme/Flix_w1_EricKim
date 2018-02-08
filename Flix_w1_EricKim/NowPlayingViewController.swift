@@ -28,6 +28,9 @@
         tableView.insertSubview(refreshControl, at: 0)
         
         tableView.dataSource = self
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 203.5
         fetchMovies()
         
     }
