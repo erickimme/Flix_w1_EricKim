@@ -15,8 +15,8 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    var movies: [[String: Any]] = []
-    
+//    var movies: [[String: Any]] = []
+    var movies: [Movie] = []
     
     
     
@@ -30,9 +30,11 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumInteritemSpacing = 5
         layout.minimumLineSpacing = layout.minimumInteritemSpacing
+        
         let cellsPerLine: CGFloat = 2
         let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
         let width = collectionView.frame.size.width / cellsPerLine - interItemSpacingTotal / cellsPerLine
+        
         layout.itemSize = CGSize(width: width, height: width * 3/2)
         
         fetchMovies()
@@ -45,13 +47,13 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PosterCell", for: indexPath) as! PosterCell
-        
         let movie = movies[indexPath.item]
-        if let posterPathString = movie["poster_path"] as? String {
-            let baseURLString = "https://image.tmdb.org/t/p/w500"
-            let posterURL = URL(string : baseURLString + posterPathString)!
-            cell.posterImageView.af_setImage(withURL: posterURL)
-        }
+//        if let posterPathString = movie["poster_path"] as? String {
+//            let baseURLString = "https://image.tmdb.org/t/p/w500"
+//            let posterURL = URL(string : baseURLString + posterPathString)!
+//            cell.posterImageView.af_setImage(withURL: posterURL)
+            cell.posterImageView.af_setImage(withURL: movie.posterUrl!)
+//        }
         return cell
     }
     
@@ -63,7 +65,9 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
             // This will run when the network request returns
             if let error = error {
                 print(error.localizedDescription)
+                self.collectionView.reloadData()
                 //self.activityIndicator.stopAnimating ()
+                
                 
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
@@ -71,7 +75,11 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
                 // TODO: Get the array of movies
                 let movies = dataDictionary["results"] as! [[String: Any]]
                 // TODO: Store the movies in a  property to use elsewhere
-                self.movies = movies
+                for dictionary in movies {
+                    let movie = Movie(dictionary: dictionary)
+                    self.movies.append(movie)
+                }
+                //                self.movies = movies
                 
                 // TODO: Reload your table view data
                 self.collectionView.reloadData()
@@ -80,6 +88,15 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
             }
         }
         task.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UICollectionViewCell
+        if let indexPath = collectionView.indexPath(for: cell){
+            let movie = movies[indexPath.item]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+        }
     }
     
     

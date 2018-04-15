@@ -12,6 +12,8 @@ enum MovieKeys {
     static let title = "title"
     static let backdropPath = "backdrop_path"
     static let posterPath = "poster_path"
+    static let releaseDate = "release_date"
+    static let overview = "overview"
 }
 
 class DetailViewController: UIViewController {
@@ -25,27 +27,33 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var overviewLabel: UILabel!
     
     
-    var movie: [String : Any]?
+//    var movie: [String : Any]?
     
-    
+    var movie: Movie?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // assuming we have movie in poster,
         if let movie = movie {
-            titleLabel.text = movie[MovieKeys.title] as? String
-            releaseDateLabel.text = movie["release_date"] as? String
-            overviewLabel.text = movie["overview"] as? String
-            let backdropPathString = movie[MovieKeys.backdropPath] as! String
-            let poseterPathString = movie[MovieKeys.posterPath] as! String
-            let baseURLString = "https://image.tmdb.org/t/p/w500"
+            titleLabel.text = movie.title
+            releaseDateLabel.text = movie.releaseDate
+            overviewLabel.text = movie.overview
             
-            let backdropURL = URL(string: baseURLString + backdropPathString)!
-            backDropImageView.af_setImage(withURL: backdropURL)
+//            titleLabel.text = movie[MovieKeys.title] as? String
+//            releaseDateLabel.text = movie["release_date"] as? String
+//            overviewLabel.text = movie["overview"] as? String
+//            let backdropPathString = movie[MovieKeys.backdropPath] as! String
+//            let poseterPathString = movie[MovieKeys.posterPath] as! String
+//            let baseURLString = "https://image.tmdb.org/t/p/w500"
+//
+//            let backdropURL = URL(string: baseURLString + backdropPathString)!
+//            backDropImageView.af_setImage(withURL: backdropURL)
+//
+//            let posterURL = URL(string: baseURLString + poseterPathString)!
+//            posterImageView.af_setImage(withURL: posterURL)
             
-            let posterURL = URL(string: baseURLString + poseterPathString)!
-            posterImageView.af_setImage(withURL: posterURL)
-            
+            backDropImageView.af_setImage(withURL: movie.backdropURL!)
+            posterImageView.af_setImage(withURL: movie.posterUrl!)
         }
     }
 
